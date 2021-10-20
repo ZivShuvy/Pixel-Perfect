@@ -1,0 +1,50 @@
+.success-stories-section {
+    background-color: $clr5;
+    height: 745px;
+    .success-stories-container {
+        margin-top: 140px;
+        h2 {
+            font-size: rem(48px);
+            line-height: rem(48px);
+            text-align: center;
+            color: $clr6;
+            padding: 0px 89px;
+            span {
+                color: $clr3;
+            }
+        }
+    }
+    .cards-container {
+        margin-top: 52px;
+        gap: 30px;
+        .card {
+            width: 350px;
+            align-items: center;
+            p {
+                font-size: rem(15px);
+                text-align: center;
+                margin-bottom: 27px;
+                line-height: rem(25px);
+            }
+            img {
+                &:first-of-type {
+                    width: 67px;
+                    margin-bottom: -20px;
+                }
+                &:last-of-type {
+                    width: 62px;
+                }
+            }
+            h4 {
+                color: $clr3;
+                margin-bottom: 2px;
+                line-height: rem(28px);
+            }
+            span {
+                font-family: Livvic-MediumItalic;
+                font-size: rem(13px);
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

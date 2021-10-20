@@ -1,0 +1,92 @@
+.features-section {
+    background-color: $clr2;
+    height: 684px;
+    position: relative;
+    .features-container {
+        margin-top: 140px;
+        justify-content: space-between;
+        .heading {
+            width: 445px;
+            hr {
+                width: 50px;
+                height: 4px;
+                background-color: $clr4;
+                margin-bottom: 54px;
+            }
+            h2 {
+                font-size: rem(48px);
+                line-height: rem(48px);
+            }
+        }
+        .features {
+            margin-top: 54px;
+            gap: 35px;
+            .feature {
+                gap: 20px;
+                .icon {
+                    position: relative;
+                    .circle {
+                        width: 56px;
+                        height: 56px;
+                        background-color: $clr1;
+                        border-radius: 50%;
+                    }
+                    img {
+                        height: 52px;
+                        width: auto;
+                        position: absolute;
+                        top: -16px;
+                        left: -10px;
+                    }
+                }
+                .text {
+                    width: 445px;
+                    h3 {
+                        font-size: rem(18px);
+                        color: $clr4;
+                        margin-bottom: 16px;
+                    }
+                    p {
+                        font-size: rem(15px);
+                        color: $clr6;
+                        opacity: 0.8;
+                        line-height: rem(25px);
+                    }
+                }
+            }
+        }
+    }
+    .shapes-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70px;
+        height: 244px;
+        overflow: hidden;
+        img {
+            position: absolute;
+            &:first-child {
+                width: 100px;
+                height: 44px;
+                z-index: 2;
+                bottom: 56px;
+            }
+            &:nth-child(2) {
+                height: 200px;
+                width: 200px;
+                bottom: 0;
+                z-index: 1;
+            }
+            &:nth-child(3) {
+                width: 53px;
+                height: 44px;
+                top: 0;
+            }
+            &:last-child {
+                width: 100px;
+                height: 100px;
+                top: 44px;
+            }
+        }
+    }
+}

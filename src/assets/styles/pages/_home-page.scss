@@ -1,0 +1,67 @@
+.home-page {
+    .get-started-section {
+        height: 200px;
+        background-color: $clr4;
+        position: relative;
+        .get-started {
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                font-size: rem(48px);
+                line-height: rem(48px);
+                color: $clr2;
+            }
+            button {
+                border-radius: 24px;
+                border: 2px solid $clr2;
+                padding: 10px 32px;
+                color: $clr2;
+                background-color: inherit;
+                transition: 0.3s ease-in;
+                &:hover {
+                    color: $clr6;
+                    background-color: $clr2;
+                }
+            }
+        }
+        .shapes-container {
+            position: absolute;
+            grid-column: 1;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 144px;
+            overflow: hidden;
+            img {
+                position: absolute;
+                &:first-child {
+                    width: 100px;
+                    height: 44px;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 3;
+                }
+                &:nth-child(2) {
+                    height: 200px;
+                    width: 200px;
+                    bottom: -100px;
+                    left: 0;
+                    z-index: 2;
+                }
+                &:nth-child(3) {
+                    width: 53px;
+                    height: 44px;
+                    bottom: 100px;
+                    left: 0;
+                }
+                &:last-child {
+                    width: 100px;
+                    height: 100px;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
